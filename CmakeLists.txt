@@ -6,11 +6,9 @@ set(SOURCES
     FileBrowser/Dirent/dirent.h
 )
 
-target_include_directories(${PROJECT_NAME} PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
-
-
 source_group(TREE ${CMAKE_CURRENT_SOURCE_DIR} FILES ${SOURCES})
 
 add_library(${PROJECT_NAME} STATIC)
 target_sources(${PROJECT_NAME} PRIVATE ${SOURCES})
 target_link_libraries(${PROJECT_NAME} ImGui)
+target_include_directories(${PROJECT_NAME} PUBLIC .)
