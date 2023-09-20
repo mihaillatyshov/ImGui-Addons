@@ -6,7 +6,7 @@ set(SOURCES
     FileBrowser/Dirent/dirent.h
 )
 
-target_include_directories(${PROJECT_NAME} PUBLIC .)
+target_include_directories(${PROJECT_NAME} PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
 
 
 source_group(TREE ${CMAKE_CURRENT_SOURCE_DIR} FILES ${SOURCES})
